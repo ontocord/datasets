@@ -181,8 +181,8 @@ class Nell(datasets.GeneratorBasedBuilder):
                         "candidate_source": row[12].strip(),
                     }
                 else:
-                    best_arg1 = row[8]
-                    best_arg2 = row[9]
+                    best_arg1 = row[9]
+                    best_arg2 = row[8]
                     iter_type = ""
                     for s2 in unquote(row[12]).strip("[]").split("-Iter"):
                         if iter_type in ("CPL", "OE"):
